@@ -14,7 +14,7 @@
 
   - name: want to install apache2 in linux
     yum:
-     name: apache2
+     name: httpd
      state: present   
 
  
