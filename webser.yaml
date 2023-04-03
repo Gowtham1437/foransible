@@ -6,15 +6,22 @@
     apt:
        name: apache2
        state: present
-
+    when: ansible_os_family == "Debian"
   - name: need to start apache2 service
     service:
        name: apache2
        state: restarted  
+    when: ansible_os_family == "Debian"
 
   - name: want to install apache2 in linux
     yum3:
      name: httpd
      state: present   
+    when: ansible_os_family == "RedHat"
 
+  - name: want to start httpd service
+    service:
+       name: httpd
+       state: restarted
+    when: ansible_os_family == "Debian"  
  
