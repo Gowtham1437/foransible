@@ -1,4 +1,4 @@
 ---
 myvar: value
-forjavau: openjdk-8-jdk 
+forjavau: openjdk-8-jdk
 forjavaL: java-1.8.0-openjdk-devel
