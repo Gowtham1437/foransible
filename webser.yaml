@@ -14,7 +14,7 @@
     when: ansible_os_family == "Debian"
 
   - name: want to install apache2 in linux
-    yum3:
+    yum:
      name: httpd
      state: present   
     when: ansible_os_family == "RedHat"
