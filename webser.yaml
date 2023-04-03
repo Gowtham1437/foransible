@@ -10,6 +10,11 @@
   - name: need to start apache2 service
     service:
        name: apache2
-       state: restarted     
+       state: restarted  
+
+  - name: want to install apache2 in linux
+    yum:
+     name: apache2
+     state: present   
 
  
