@@ -13,7 +13,7 @@
        state: restarted  
 
   - name: want to install apache2 in linux
-    yum:
+    yum3:
      name: httpd
      state: present   
 
