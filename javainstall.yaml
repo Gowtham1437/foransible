@@ -2,8 +2,8 @@
 - hosts: sampleservers
   become: yes
   vars:
-   forjavau: openjdk-8-jre
-   forjavaL: java-1.8.0-openjdk
+   forjavau: openjdk-9-jre
+   forjavaL: jdk-9.0.1_linux-x64_bin.rpm
   tasks:
   - name: install java on ubuntu
     apt:
