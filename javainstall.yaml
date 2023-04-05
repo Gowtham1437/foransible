@@ -1,9 +1,6 @@
 ---
 - hosts: sampleservers
   become: yes
-  vars: 
-   forjavau: openjdk-8-jre
-   forjavaL: java-1.8.0-openjdk
   tasks: 
   - name: want to install java8 on ubuntu
     apt:
