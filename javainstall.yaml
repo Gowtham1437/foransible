@@ -1,15 +1,15 @@
 ---
-- hosts: sampleservers
+- hosts: mywebservers
   become: yes
-  tasks: 
-  - name: want to install java8 on ubuntu
+  tasks:
+  - name: install java on ubuntu
     apt:
-     name: "{{forjavau}}"
-     state: present
+      name: "{{forjavau}}"
+      state: present
     when: ansible_os_family =="Debian"
 
-  - name: want to install java8 on "RedHat"
+  - name: install java on RedHat 
     yum:
-     name: "{{forjavaL}}"
-     state: present
+      name: "{{forjavaL}}"
+      state: present
     when: ansible_os_family =="RedHat" 
