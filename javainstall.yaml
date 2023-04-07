@@ -1,5 +1,5 @@
 ---
-- hosts: sampleservers
+- hosts: 172.31.11.198
   become: yes
   vars:
    forjavau: openjdk-9-jre
