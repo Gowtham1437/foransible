@@ -1,19 +1,17 @@
 ---
 - hosts: 172.31.11.198
   become: yes
-  vars:
-   forjavau: openjdk-9-jre
-   forjavaL: jdk-9.0.1_linux-x64_bin.rpm
   tasks:
   - name: install java on ubuntu
     apt:
-      name: "{{forjavau}}"
+      name: apace2
       state: present
     when: ansible_os_family =="Debian"
-    tags: "newtags"
+    tags: newtag
 
   - name: install java on RedHat 
     yum:
-      name: "{{forjavaL}}"
+      name: httpd
       state: present
     when: ansible_os_family =="RedHat" 
+    tags: tag2
