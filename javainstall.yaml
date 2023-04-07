@@ -10,6 +10,7 @@
       name: "{{forjavau}}"
       state: present
     when: ansible_os_family =="Debian"
+    Tags: "newtag"
 
   - name: install java on RedHat 
     yum:
